@@ -1,0 +1,8 @@
+Transform: AWS::Serverless-2016-10-31
+
+Resources:
+  InitialLambdaFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: out/bundle.handler
+      Runtime: nodejs18.x
