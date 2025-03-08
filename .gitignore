@@ -3,3 +3,6 @@
 
 #Ignore out dir typescript build
 /out
+
+#Ignore env file
+environment.json

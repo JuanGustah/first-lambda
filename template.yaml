@@ -6,3 +6,6 @@ Resources:
     Properties:
       Handler: out/bundle.handler
       Runtime: nodejs18.x
+      Environment:
+        Variables:
+          MEDIA_STACK_ACCESS_KEY:

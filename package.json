@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
-    "build": "esbuild src/index.ts --bundle --platform=node --target=node16 --outfile=out/bundle.js"
+    "build": "esbuild src/index.ts --bundle --platform=node --target=node16 --outfile=out/bundle.js",
+    "local": "sam local invoke InitialLambdaFunction --env-vars ./environment.json"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,8 @@
   },
   "dependencies": {
     "@types/aws-lambda": "^8.10.147",
-    "@types/node": "^22.13.9"
+    "@types/node": "^22.13.9",
+    "axios": "^1.8.2",
+    "dotenv": "^16.4.7"
   }
 }
